@@ -1,6 +1,6 @@
 package gui;
 import controller.GestorSeleccion;
-import model.jugador;
+import model.Jugador;
 
 import javax.swing.*;
 import java.awt.*;
@@ -37,7 +37,7 @@ public class VentanaEliminarJugador extends JFrame {
         etiqueta.setBounds(x, y, ancho, alto);
         etiqueta.setHorizontalAlignment(SwingConstants.LEFT);
         etiqueta.setForeground(Color.BLACK);
-        etiqueta.setFont(new Font(estiloTexto, 1, alto);
+        etiqueta.setFont(new Font(estiloTexto, 1, alto));
         return etiqueta;
     }
 

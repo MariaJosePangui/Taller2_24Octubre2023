@@ -84,13 +84,13 @@ public class VentanaAgregarSeleccion extends JFrame {
         ActionListener eventoClick1 = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                GestorSeleccion gestorSeleccion = new GestorSeleccion();
+                /*GestorSeleccion gestorSeleccion = new GestorSeleccion();*/
 
                 String id= cajaTexto1.getText();
                 String nombrePais = cajaTexto2.getText();
                 String rankingFifa = cajaTexto3.getText();
                 Seleccion seleccion = new Seleccion(id, nombrePais, rankingFifa);
-                gestorSeleccion.agregarSeleccion(seleccion);
+                /*gestorSeleccion.agregarSeleccion(seleccion);*/
             }
         };
         boton1.addActionListener(eventoClick1);

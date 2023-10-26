@@ -91,8 +91,7 @@ public class VentanaBuscarSeleccion extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                VentanaMostrarTabla ventanaMostrarTabla = new VentanaMostrarTabla(cajaTexto1.getText(), (String) listaDesplegable1.getSelectedItem());
-            }
+                            }
         };
         boton1.addActionListener(eventoClick1);
 
