@@ -1,6 +1,4 @@
 package gui;
-import org.jooq.DSLContext;
-import org.jooq.impl.DSL;
 
 import javax.swing.*;
 import java.awt.*;
@@ -102,7 +100,7 @@ public class VentanaBuscarSeleccion extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 dispose();
-                VentanaPrincipal ventanaPrincipal = new VentanaPrincipal();
+                VentanaMenu ventanaPrincipal = new VentanaMenu();
                 ventanaPrincipal.setVisible(true);
             }
         };

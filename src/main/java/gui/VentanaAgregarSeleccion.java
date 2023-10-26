@@ -57,20 +57,14 @@ public class VentanaAgregarSeleccion extends JFrame {
     }
 
     public void agregarSeleccion() {
-        JLabel etiqueta1 = crearEtiqueta("Agregar Selección", 120, 10, 200, 20, "Calibri");
+        JLabel etiqueta1 = crearEtiqueta("id", 120, 10, 200, 20, "Calibri");
         panel.add(etiqueta1);
 
-        JLabel etiqueta2 = crearEtiqueta("Nombre de la Selección: ", 10, 50, 200, 14, "Calibri");
+        JLabel etiqueta2 = crearEtiqueta("Nombre Pais: ", 10, 50, 200, 14, "Calibri");
         panel.add(etiqueta2);
 
-        JLabel etiqueta3 = crearEtiqueta("Tipo de Selección: ", 10, 90, 200, 14, "Calibri");
+        JLabel etiqueta3 = crearEtiqueta("Ranking Fifa: ", 10, 90, 200, 14, "Calibri");
         panel.add(etiqueta3);
-
-        JLabel etiqueta4 = crearEtiqueta("País de la Selección: ", 10, 130, 200, 14, "Calibri");
-        panel.add(etiqueta4);
-
-        JLabel etiqueta5 = crearEtiqueta("Año de Fundación: ", 10, 170, 200, 14, "Calibri");
-        panel.add(etiqueta5);
 
         JTextField cajaTexto1 = crearCajaTexto(220, 47, 150, 20);
         panel.add(cajaTexto1);
@@ -80,9 +74,6 @@ public class VentanaAgregarSeleccion extends JFrame {
 
         JTextField cajaTexto3 = crearCajaTexto(220, 127, 150, 20);
         panel.add(cajaTexto3);
-
-        JTextField cajaTexto4 = crearCajaTexto(220, 167, 150, 20);
-        panel.add(cajaTexto4);
 
         JButton boton1 = crearBoton("Agregar", 40, 270, 150, 18, "Calibri");
         panel.add(boton1);
@@ -94,11 +85,11 @@ public class VentanaAgregarSeleccion extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 GestorSeleccion gestorSeleccion = new GestorSeleccion();
-                String nombreSeleccion = cajaTexto1.getText();
-                String tipoSeleccion = cajaTexto2.getText();
-                String paisSeleccion = cajaTexto3.getText();
-                int anioFundacion = Integer.parseInt(cajaTexto4.getText());
-                Seleccion seleccion = new Seleccion(nombreSeleccion, tipoSeleccion, paisSeleccion, anioFundacion);
+
+                String id= cajaTexto1.getText();
+                String nombrePais = cajaTexto2.getText();
+                String rankingFifa = cajaTexto3.getText();
+                Seleccion seleccion = new Seleccion(id, nombrePais, rankingFifa);
                 gestorSeleccion.agregarSeleccion(seleccion);
             }
         };
