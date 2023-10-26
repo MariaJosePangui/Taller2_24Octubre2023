@@ -1,5 +1,4 @@
 package gui;
-
 import controller.GestorSeleccion;
 import model.jugador;
 
@@ -8,11 +7,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class VentanaEliminarJugadores extends JFrame {
+public class VentanaEliminarJugador extends JFrame {
     private JPanel panel;
 
-    public VentanaEliminarJugadores() {
-        setTitle("Eliminar Jugadores");
+    public VentanaEliminarJugador() {
+        setTitle("Eliminar Jugador");
         setBounds(50, 50, 400, 300);
         setLocationRelativeTo(null);
         setResizable(false);
@@ -22,7 +21,7 @@ public class VentanaEliminarJugadores extends JFrame {
 
     public void iniciarComponentes() {
         generarPanel();
-        eliminarJugadores();
+        eliminarJugador();
     }
 
     public void generarPanel() {
@@ -57,7 +56,7 @@ public class VentanaEliminarJugadores extends JFrame {
         return boton;
     }
 
-    public void eliminarJugadores() {
+    public void eliminarJugador() {
         JLabel etiqueta1 = crearEtiqueta("Eliminar Jugadores", 120, 10, 200, 20, "Calibri");
         panel.add(etiqueta1);
 
